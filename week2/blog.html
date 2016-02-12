@@ -1,10 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Batman's Blog</title>
 </head>
 <body>
-<H1>Does this work?</H1>
+<header id="PageHeader">
+    <img src="batman.png" id="SiteLogo"/>
+    <h1 id="SiteTitle">Batman's Blog</h1>
+</header>
+<nav id="SiteNavigation">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section id="PageContent">
+    <article class="BlogPost">
+        <header>
+            <h1 class="BlogPostTitle">Joker is a Joke</h1>
+            <time class="BlogPostDate" pubdate="pubdate">2016-12-02</time>
+        </header>
+        <div class="BlogPostContent">
+            <p>I kicked Joker's ass today and sent him to Arkham Asylum. Will be a while until he gets out.</p>
+        </div>
+    </article>
+</section>
 </body>
 </html>
