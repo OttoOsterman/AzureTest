@@ -1,18 +1,23 @@
+body{background-color: #0B0511;}
 #BlogPostTitle{color:#F5B753;}
 #PageHeader{background-color: #504A4E;}
 #SiteNavigation{background-color: #504A4E;}
 #PageContent{background-color: #504A4E;}
 #PageFooter{background-color: #504A4E;}
+#SiteTitle{
+    position:relative;
+    text-align: center;
+    padding-top: 200px}
 #PageHeader    {
     background-image:url('batman.png');
     background-repeat: no-repeat;
     background-position:center;
     background-color: #504A4E;
     max-width: 840px;
-    height: 200px;
+    height: 250px;
     margin: 0px auto;
     padding: 20px;
-    border: solid 2px #F5B753;
+    border: solid 4px #F5B753;
     border-radius: 20px;
     display: block;
     position: relative;
@@ -28,4 +33,17 @@
     right: 0;
     position: absolute;
     z-index: 1;
+}
+#SiteNavigation{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #504A4E;
+    max-width: 840px;
+    height: 250px;
+    margin: 8px auto;
+    padding: 20px;
+    border: solid 4px #F5B753;
+    border-radius: 20px;
+    display: block;
+    position: relative;
 }
