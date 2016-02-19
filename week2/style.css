@@ -3,7 +3,7 @@
 #SiteNavigation{background-color: #504A4E;}
 #PageContent{background-color: #504A4E;}
 #PageFooter{background-color: #504A4E;}
-title    {
+#SiteLogo    {
     background-image:url('batman.jpg');
     background-repeat: no-repeat;
     background-position:center;
@@ -17,7 +17,7 @@ title    {
     position: relative;
 
 }
-title:after  {
+#SiteLogo:after  {
     content: "";
     background-color: #000;
     opacity: .1;
