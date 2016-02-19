@@ -3,3 +3,28 @@
 #SiteNavigation{background-color: #504A4E;}
 #PageContent{background-color: #504A4E;}
 #PageFooter{background-color: #504A4E;}
+title    {
+    background-image:url('batman.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #fff;
+    max-width: 840px;
+    margin: 0px auto;
+    padding: 20px;
+    border: solid 2px #5CACEE;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+
+}
+title:after  {
+    content: "";
+    background-color: #000;
+    opacity: .1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
