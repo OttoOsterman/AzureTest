@@ -47,3 +47,50 @@ body{background-color: #0B0511;}
     display: block;
     position: relative;
 }
+#PageFooter{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #504A4E;
+    max-width: 840px;
+    height: 250px;
+    margin: 8px auto;
+    padding: 20px;
+    border: solid 4px #F5B753;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+#PageContent{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #504A4E;
+    max-width: 840px;
+    height: 250px;
+    margin: 8px auto;
+    padding: 20px;
+    border: solid 4px #F5B753;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+#PageContent #BlogPost{
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: #504A4E;
+    max-width: 80%;
+    height: 80%;
+    margin: 6px auto;
+    margin-top: 25%;
+    padding: 20px;
+    border: solid 4px #F5B753;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+}
+body{
+    font-family: "Comic Sans MS", Times, serif;
+}
+#SiteNavigation{
+
+}
