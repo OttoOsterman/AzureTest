@@ -3,32 +3,57 @@
 <head>
     <meta charset="utf-8">
     <title>Moggybook</title>
+    <script>
+        //grab the URL in the location bar
+        var searchString = document.location.search;
+
+        //strip off the leading '?'
+        searchString = searchString.substring(1);
+
+        //split string of arguments into name=value pairs
+        var nvPairs = searchString.split("&");
+
+        //iterate though name=value pairs
+        //split into separate name and value
+        //print to the browser console
+        for (i = 0; i < nvPairs.length; i++) {
+            var nvPair = nvPairs[i].split("=");
+            var name = nvPair[0];
+            var value = nvPair[1];
+            console.log("argument name="+name+" and value="+value);
+        }
+    </script>
 </head>
 <body>
-<h1>Moggybook</h1>
-<form name='username' method="get" id="search">
-    <input type="text" name="searchterms" size="50">
-    <input type="submit" name="submit" value="username!">
-</form>
-<form name='breed' method="get" id="search2">
-    <input type="text" name="searchterms" size="50">
-    <input type="submit" name="submit" value="breed">
-</form>
-<form name='email' method="get" id="search3">
-    <input type="text" name="searchterms" size="50">
-    <input type="submit" name="submit" value="email">
-</form>
-<form name='homepage' method="get" id="search4">
-    <input type="text" name="searchterms" size="50">
-    <input type="submit" name="submit" value="homepage">
-</form>
-<form name='date of birth' method="get" id="search5">
-    <input type="text" name="searchterms" size="50">
-    <input type="submit" name="submit" value="date of birth">
-</form>
-<form name='about' method="get" id="search6">
-    <input type="text" name="searchterms" size="50">
-    <input type="submit" name="submit" value="about">
+<h1>Moggybook!</h1>
+<form>
+    <table border="0" cellspacing="5" cellpadding="5">
+        <tr>
+            <td>Username:</td>
+            <td><input typ="textarea" name="username"></td>
+        </tr>
+        <tr>
+            <td>Breed:</td>
+            <td><input typ="textarea" name="breed"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input typ="textarea" name="email"></td>
+        </tr>
+        <tr>
+            <td>Homepage:</td>
+            <td><input typ="textarea" name="homepage"></td>
+        </tr>
+        <tr>
+            <td>Date of birth:</td>
+            <td><input typ="textarea" name="dob"></td>
+        </tr>
+        <tr>
+            <td>About:</td>
+            <td><input typ="textarea" name="about"></td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" value="Submit" onclick="testResults(this.form)"/>
 </form>
 </body>
 </html>
